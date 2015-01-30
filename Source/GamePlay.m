@@ -141,11 +141,17 @@
         notFirstTime=false;
         
     }
-    if(count==96){
+    if(count==69){
         self.points++;
         count=0;
     }
+
+    CCLOG(@"count:%d points: %d", count, self.points);
+
 }
+
+
+
 
 
 -(void) exitScene{

@@ -66,9 +66,9 @@
 		927F61B9196C771E000F43EF /* iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F590E188484E7003F4D28 /* iPhone@2x.png */; };
 		927F61BA196C771E000F43EF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B737896D180762440076A88C /* Default.png */; };
 		927F61BB196C771E000F43EF /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
-		B5541F891A7B17C0006F44DD /* death.caf in Resources */ = {isa = PBXBuildFile; fileRef = B5541F871A7B17C0006F44DD /* death.caf */; };
-		B5541F8A1A7B17C0006F44DD /* granada.caf in Resources */ = {isa = PBXBuildFile; fileRef = B5541F881A7B17C0006F44DD /* granada.caf */; };
 		B5541F8D1A7B34FF006F44DD /* Albeniz_Leyenda.caf in Resources */ = {isa = PBXBuildFile; fileRef = B5541F8C1A7B34FF006F44DD /* Albeniz_Leyenda.caf */; };
+		B5541F8F1A7B3686006F44DD /* death.caf in Resources */ = {isa = PBXBuildFile; fileRef = B5541F8E1A7B3686006F44DD /* death.caf */; };
+		B5541F911A7B3699006F44DD /* granada.caf in Resources */ = {isa = PBXBuildFile; fileRef = B5541F901A7B3699006F44DD /* granada.caf */; };
 		B5A8D1581A68BD1C00EB574E /* Log1.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A8D1571A68BD1C00EB574E /* Log1.m */; };
 		B5C5EE0A1A68ADA300A1C223 /* Marble.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C5EE091A68ADA300A1C223 /* Marble.m */; };
 		B5E0B5901A67A0A7002B5615 /* GamePlay.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E0B58F1A67A0A7002B5615 /* GamePlay.m */; };
@@ -202,9 +202,9 @@
 		7AFCD5DD19E9BDC200BCCCDA /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Source/Bridging-Header.h"; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		927F61BF196C771E000F43EF /* InfiniteTriangle Android.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InfiniteTriangle Android.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5541F871A7B17C0006F44DD /* death.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = death.caf; path = ../../../death.caf; sourceTree = "<group>"; };
-		B5541F881A7B17C0006F44DD /* granada.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = granada.caf; path = ../../../granada.caf; sourceTree = "<group>"; };
 		B5541F8C1A7B34FF006F44DD /* Albeniz_Leyenda.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Albeniz_Leyenda.caf; sourceTree = "<group>"; };
+		B5541F8E1A7B3686006F44DD /* death.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = death.caf; sourceTree = "<group>"; };
+		B5541F901A7B3699006F44DD /* granada.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = granada.caf; sourceTree = "<group>"; };
 		B5A8D1561A68BD1C00EB574E /* Log1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Log1.h; path = Source/Log1.h; sourceTree = "<group>"; };
 		B5A8D1571A68BD1C00EB574E /* Log1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Log1.m; path = Source/Log1.m; sourceTree = "<group>"; };
 		B5C5EE081A68ADA300A1C223 /* Marble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Marble.h; path = Source/Marble.h; sourceTree = "<group>"; };
@@ -478,9 +478,9 @@
 		B5C5EE041A68A8B600A1C223 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				B5541F901A7B3699006F44DD /* granada.caf */,
+				B5541F8E1A7B3686006F44DD /* death.caf */,
 				B5541F8C1A7B34FF006F44DD /* Albeniz_Leyenda.caf */,
-				B5541F871A7B17C0006F44DD /* death.caf */,
-				B5541F881A7B17C0006F44DD /* granada.caf */,
 			);
 			name = Audio;
 			sourceTree = "<group>";
@@ -808,19 +808,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				B71F5919188484E7003F4D28 /* Settings.png in Resources */,
-				B5541F891A7B17C0006F44DD /* death.caf in Resources */,
 				B7378978180762440076A88C /* Default@2x.png in Resources */,
 				B71F5914188484E7003F4D28 /* iPad@2x.png in Resources */,
 				B71F5913188484E7003F4D28 /* iPad.png in Resources */,
 				B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */,
 				B71F5916188484E7003F4D28 /* iPhone-old@2x.png in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
+				B5541F8F1A7B3686006F44DD /* death.caf in Resources */,
 				B71F591A188484E7003F4D28 /* Settings@2x.png in Resources */,
 				B7378976180762440076A88C /* Default-Landscape~ipad.png in Resources */,
 				B71F5915188484E7003F4D28 /* iPhone-old.png in Resources */,
 				B71F5917188484E7003F4D28 /* iPhone.png in Resources */,
-				B5541F8A1A7B17C0006F44DD /* granada.caf in Resources */,
 				B7378975180762440076A88C /* Default-568h@2x.png in Resources */,
+				B5541F911A7B3699006F44DD /* granada.caf in Resources */,
 				B71F5918188484E7003F4D28 /* iPhone@2x.png in Resources */,
 				B5541F8D1A7B34FF006F44DD /* Albeniz_Leyenda.caf in Resources */,
 				B7378977180762440076A88C /* Default.png in Resources */,
