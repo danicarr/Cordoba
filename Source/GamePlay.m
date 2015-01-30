@@ -223,8 +223,8 @@
         for(int i=0; i<marbles.count; i++){
             if(CGRectIntersectsRect(_playerLobj.boundingBox,((Marble*)[marbles objectAtIndex:i]).boundingBox) ){
                 [[OALSimpleAudio sharedInstance] playEffect:@"death.caf" loop:NO];
-                //[_contentNode removeChild: _playerLobj];
-                //isGameOver=true;
+                [_contentNode removeChild: _playerLobj];
+                isGameOver=true;
             }
         }
     }
@@ -233,8 +233,8 @@
         for(int j=0; j<logs.count;j++){
         if(CGRectIntersectsRect(_playerRobj.boundingBox, ((Log1*)[logs objectAtIndex:j]).boundingBox) && _playerRobj.opacity==1 && !(CGRectIntersectsRect(((Log1*)[logs objectAtIndex:j]).boundingBox, _wfJunc.boundingBox))){
             [[OALSimpleAudio sharedInstance] playEffect:@"death.caf" loop:NO];
-            //[_contentNode removeChild: _playerRobj];
-            //isGameOver=true;
+            [_contentNode removeChild: _playerRobj];
+            isGameOver=true;
             
             }
         }
